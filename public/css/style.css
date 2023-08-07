@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  
+    box-sizing: border-box;
+    font: inherit;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+  }
+  
+  nav.navbar {
+    background-color: #f1f3ff;
+  }
+  .navbar-brand {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+  .offcanvas-body ul li a {
+    color: #646464;
+    margin: 0 10px;
+  }
+  .offcanvas-body ul li a:hover:not(.btn) {
+    color: black;
+    border-bottom: 2px solid black;
+  }
+  
+  /* main section */
+  .main-section {
+    width: auto;
+    height: auto;
+    background-color: #f1f3ff;
+    position: relative;
+  }
+  
+  .tagline h2,
+  .tagline a {
+    margin: 24px 0;
+    text-transform: capitalize;
+  }
+
+  /*BUTTON */ 
+  .btn.btn-success {
+    border: 1px solid #5cb85f;
+    color: #ffffff;
+    box-shadow: 1px 10px 30px -10px #5cb85f;
+    display: inline-block;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .btn.btn-success:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #5cb85f;
+    z-index: -2;
+  }
+  .btn.btn-success:before {
+    content: "";
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #ffffff;
+    transition: all 0.3s;
+    z-index: -1;
+  }
+  .btn.btn-success:hover {
+    color: #5cb85f;
+  }
+  .btn.btn-success:hover:before {
+    width: 100%;
+  }
+  
+  /* OUR SERVICE */
+  .img_service {
+    position: relative;
+    width: 459px;
+    height: 428px;
+    margin-top: 60px;
+    margin-left: 10px;
+  }
+  .text-services {
+    margin-top: 60px;
+    position: relative;
+  }
+  .frame-105 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    position: relative;
+    margin: auto;
+  
+  }
+  .frame-107 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: static;
+  
+    height: 24px;
+    left: 0px;
+    top: 160px;
+    
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+    margin: 8px 0px;
+  }
+    
+  .text-frame {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+  
+    color: #000000;
+    order: 1;
+    margin: 0px 16px;
+  }
+    
+  .desc-header {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+  }
+    
+  .desc-description {
+    left: 0px;
+    top: 0px;
+    
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+   
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 16px 0px;
+  }
+    
+  /* WHY US */
+  .why-us-tittle {
+    margin-top: 100px;
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+  }
+  .why-us-caption {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+  }
+  .why-us {
+    margin-left: 1px;
+  }
+  .card-why-us {
+    border: 1px solid #d0d0d0;
+    padding: 20px;
+  }
+    
+  /* TESTI */
+  .testimonial-title {
+    position: absolute;
+    height: 36px;
+    left: 35%;
+    right: 35.14%;
+    top: 1450px;
+  
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+  }
+  .testimonial-caption {
+    position: absolute;
+    width: 468px;
+    height: 20px;
+    left: 32%;
+    top: 1492px;
+    
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;  
+    text-align: center;
+    color: #000000;
+  }
+    
+  .testimonial-img {
+    margin-right: 30px;
+  }
+    
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 30px;
+    width: 30px;
+    background-color: blue;
+    background-size: 50%, 50%;
+    border-radius: 100%;
+    border: 1px solid blue;
+  }
+  .carousel-control-prev {
+    margin-left: 10px;
+  }
+  .carousel-control-next {
+    margin-right: -40px;
+  }
+    
+  /* CTA BANNER */
+  .cta-banner {
+    position: absolute;
+    width: 1115px;
+    height: 326px;
+    left: 85px;
+    top: 1700px;
+  }
+  .btn-cta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    
+    position: absolute;
+    width: auto;
+    height: 36px;
+    left: 480px;
+    top: 220px;
+    background: #5cb85f;
+    border-radius: 2px;
+  }
+  .cta-judul {
+    position: absolute;
+    width: 613px;
+    height: 54px;
+    left: 236px;
+    top: 80px;
+    
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 150%;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  /*BUTTON TESTI*/
+  .bi.bi-chevron-left,
+  .bi.bi-chevron-right {
+      background-color: white;
+      color: black;
+      font-size: 30px;
+      border: 1px solid black;
+      padding: 3px 10px;
+      border-radius: 35px;
+  }
+  .bi.bi-chevron-left:hover,
+  .bi.bi-chevron-right:hover {
+      background-color: #5CB85F;
+      border: 1px solid #5CB85F;
+      color: white;
+  }
+  .carousel-item img {
+      transition: all .5s;
+  }
+  .carousel-item img:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+  }
+  
+  /*BANNER*/
+  .banner .container {
+    background-color: #0D28A6;
+    border-radius: 13px;
+    color: white;
+    width: 100%;
+  }
+  .banner .container * {
+      margin: 16px 0;
+  }
+  .carousel-item .card {
+      background-color: #F1F3FF;
+      border: none;
+  }
+  .carousel-item .card .card-body img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+  }
+  
+  /* FOOTER */
+  .d-flex img{
+    margin-right: 5%
+  }
+  .rectangle-cr {
+    position: absolute;
+    width: 100px;
+    height: 34px;
+    left: 883px;
+    top: 36px;
+    background: #0D28A6;
+  }
+

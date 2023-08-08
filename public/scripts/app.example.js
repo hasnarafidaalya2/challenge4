@@ -16,6 +16,7 @@ class App {
 
   run = async() => {
     await this.load()
+    this.clear()
     Car.list.forEach((car) => {
       const node = document.createElement('div');
       node.className = 'col-lg-4'
@@ -44,4 +45,13 @@ class App {
     });
     Car.init(cars);
   }
+  clear = () => {
+  let child = this.carContainerElement.firstElementChild;
+
+  while(child){
+    child.remove();
+    child=this.carContainerElement.firstElementChild;
+    }
+  };
+  
 }

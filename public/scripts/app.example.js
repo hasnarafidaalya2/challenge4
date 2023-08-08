@@ -12,13 +12,11 @@ class App {
     await this.load();
 
     // Register click listener
-    this.clearButton.onclick = this.clear;
     this.loadButton.onclick = this.run;
   }
 
   run = async() => {
     await this.load()
-    this.clear()
     Car.list.forEach((car) => {
       const node = document.createElement('div');
       node.className = 'col-lg-4'

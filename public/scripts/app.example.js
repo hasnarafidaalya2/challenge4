@@ -45,13 +45,4 @@ class App {
     });
     Car.init(cars);
   }
-
-  clear = () => {
-    let child = this.carContainerElement.firstElementChild;
-
-    while (child) {
-      child.remove();
-      child = this.carContainerElement.firstElementChild;
-    }
-  };
 }
